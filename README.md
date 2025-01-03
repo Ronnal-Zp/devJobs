@@ -30,12 +30,12 @@ You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
 ## Development Configuration
-* run `composer install`
-* run `npm install`
-* set environment variables, the project uses docker and therefore the db server ip refers to the internal domain that docker generates for the mysql container, in this case DB_HOST is `mysql`
-* execute `sail php artisan key:generate` for generate APP_KEY
-* run `sail up`
-* run `sail npm run dev`
+* After cloning repository run `docker run --rm --interactive --tty -v $(pwd):/app composer install` to install vendor packages.
+* Run `sail npm install` to install node packages.
+* Set environment variables, the project uses docker and therefore the db server ip refers to the internal domain that docker generates for the mysql container, in this case DB_HOST is `mysql`
+* Run `sail php artisan key:generate` for generate APP_KEY.
+* Run `sail up`
+* Run `sail npm run dev`
 
 
 ## Laravel Sponsors
